@@ -214,7 +214,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      color: var(--ink);
+      color: #ffffff !important;
       font-size: clamp(11px, 1vw, 13px);
       line-height: 1.05;
       font-weight: 820;
@@ -226,6 +226,7 @@
       border: 1px solid rgba(255, 255, 255, 0.16);
       background: linear-gradient(135deg, rgba(255, 138, 42, 0.88), rgba(255, 43, 191, 0.78), rgba(93, 29, 255, 0.72));
       box-shadow: 0 0 30px rgba(255, 43, 191, 0.18);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 12px rgba(0, 0, 0, 0.4);
     }
 
     .eyebrow::before {
@@ -763,6 +764,10 @@
         font-size: clamp(48px, 12vw, 92px);
       }
 
+      .eyebrow {
+        max-width: 100%;
+      }
+
       .side-panel {
         min-height: 330px;
       }
@@ -803,6 +808,13 @@
       h1 {
         font-size: clamp(42px, 15vw, 64px);
         line-height: 0.95;
+      }
+
+      .eyebrow {
+        display: flex;
+        width: fit-content;
+        max-width: 100%;
+        font-size: 11px;
       }
 
       .button {
