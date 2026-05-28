@@ -7,34 +7,34 @@
   <meta name="description" content="Portfolio of Shibam Banerjee, a Product Marketing Delivery Manager transitioning into Product Management through product ownership, experimentation, AI automation, stakeholder leadership, and delivery strategy.">
   <style>
     :root {
-      color-scheme: dark;
-      --bg: #030303;
-      --ink: #f8f8f3;
-      --muted: #a6a29b;
-      --line: rgba(255, 255, 255, 0.16);
-      --panel: rgba(13, 13, 13, 0.76);
-      --panel-strong: rgba(20, 20, 20, 0.94);
-      --accent: #ff8a2a;
-      --accent-2: #ff2bbf;
-      --accent-3: #5d1dff;
-      --shadow: 0 28px 90px rgba(255, 43, 191, 0.16), 0 0 42px rgba(93, 29, 255, 0.14);
+      color-scheme: light;
+      --bg: #ffffff;
+      --ink: #151515;
+      --muted: #5f626a;
+      --line: rgba(21, 21, 21, 0.12);
+      --panel: #ffffff;
+      --panel-strong: #fff7f7;
+      --accent: #d71920;
+      --accent-2: #a80f16;
+      --accent-3: #ffebeb;
+      --shadow: 0 24px 70px rgba(215, 25, 32, 0.14), 0 12px 30px rgba(21, 21, 21, 0.08);
       --radius: 8px;
       --max: 1180px;
       --step: clamp(48px, 8vw, 112px);
     }
 
     [data-theme="dark"] {
-      color-scheme: dark;
-      --bg: #030303;
-      --ink: #f8f8f3;
-      --muted: #a6a29b;
-      --line: rgba(255, 255, 255, 0.16);
-      --panel: rgba(13, 13, 13, 0.76);
-      --panel-strong: rgba(20, 20, 20, 0.94);
-      --accent: #ff8a2a;
-      --accent-2: #ff2bbf;
-      --accent-3: #5d1dff;
-      --shadow: 0 28px 90px rgba(255, 43, 191, 0.16), 0 0 42px rgba(93, 29, 255, 0.14);
+      color-scheme: light;
+      --bg: #ffffff;
+      --ink: #151515;
+      --muted: #5f626a;
+      --line: rgba(21, 21, 21, 0.12);
+      --panel: #ffffff;
+      --panel-strong: #fff7f7;
+      --accent: #d71920;
+      --accent-2: #a80f16;
+      --accent-3: #ffebeb;
+      --shadow: 0 24px 70px rgba(215, 25, 32, 0.14), 0 12px 30px rgba(21, 21, 21, 0.08);
     }
 
     * {
@@ -48,11 +48,10 @@
     body {
       margin: 0;
       background:
-        radial-gradient(circle at 16% 16%, rgba(255, 138, 42, 0.16), transparent 30%),
-        radial-gradient(circle at 78% 12%, rgba(255, 43, 191, 0.14), transparent 34%),
-        radial-gradient(circle at 68% 80%, rgba(93, 29, 255, 0.16), transparent 30%),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px) 0 0 / 72px 72px,
-        linear-gradient(0deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px) 0 0 / 72px 72px,
+        radial-gradient(circle at 14% 10%, rgba(215, 25, 32, 0.08), transparent 28%),
+        radial-gradient(circle at 82% 16%, rgba(215, 25, 32, 0.06), transparent 30%),
+        linear-gradient(90deg, rgba(215, 25, 32, 0.045) 1px, transparent 1px) 0 0 / 72px 72px,
+        linear-gradient(0deg, rgba(21, 21, 21, 0.035) 1px, transparent 1px) 0 0 / 72px 72px,
         var(--bg);
       color: var(--ink);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
@@ -69,33 +68,33 @@
       position: fixed;
       inset: 0 0 auto;
       height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+      background: var(--accent);
       transform: scaleX(0);
       transform-origin: left;
       z-index: 40;
-      box-shadow: 0 0 22px rgba(255, 43, 191, 0.48), 0 0 44px rgba(255, 138, 42, 0.28);
+      box-shadow: 0 0 18px rgba(215, 25, 32, 0.24);
     }
 
     .cursor {
       position: fixed;
       width: 18px;
       height: 18px;
-      border: 1px solid var(--accent-2);
+      border: 1px solid var(--accent);
       border-radius: 50%;
       pointer-events: none;
       transform: translate(-50%, -50%);
       transition: width 160ms ease, height 160ms ease, opacity 160ms ease, border-color 160ms ease;
       z-index: 50;
       opacity: 0.55;
-      box-shadow: 0 0 18px rgba(255, 43, 191, 0.32);
+      box-shadow: 0 0 18px rgba(215, 25, 32, 0.18);
     }
 
     .cursor.is-active {
       width: 42px;
       height: 42px;
-      border-color: var(--accent-2);
+      border-color: var(--accent);
       opacity: 0.55;
-      box-shadow: 0 0 24px rgba(255, 138, 42, 0.45);
+      box-shadow: 0 0 24px rgba(215, 25, 32, 0.22);
     }
 
     .shell {
@@ -109,8 +108,8 @@
       z-index: 30;
       backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--line);
-      background: rgba(3, 3, 3, 0.86);
-      box-shadow: 0 10px 44px rgba(0, 0, 0, 0.35);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 34px rgba(21, 21, 21, 0.06);
     }
 
     .nav {
@@ -134,9 +133,9 @@
       gap: 6px;
       padding: 6px;
       border: 1px solid var(--line);
-      background: rgba(14, 14, 14, 0.84);
+      background: rgba(255, 255, 255, 0.86);
       border-radius: 999px;
-      box-shadow: inset 0 0 18px rgba(255, 43, 191, 0.05);
+      box-shadow: inset 0 0 0 1px rgba(215, 25, 32, 0.02);
     }
 
     .navlinks a {
@@ -150,9 +149,9 @@
 
     .navlinks a.active,
     .navlinks a:hover {
-      background: linear-gradient(135deg, var(--accent), var(--accent-2), var(--accent-3));
-      color: #030303;
-      box-shadow: 0 0 18px rgba(255, 43, 191, 0.34);
+      background: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 10px 26px rgba(215, 25, 32, 0.18);
     }
 
     .nav-actions {
@@ -165,7 +164,7 @@
     .icon-btn,
     .button {
       border: 1px solid var(--line);
-      background: rgba(14, 14, 14, 0.76);
+      background: #ffffff;
       color: var(--ink);
       min-height: 42px;
       border-radius: 999px;
@@ -188,17 +187,17 @@
     }
 
     .button.primary {
-      background: linear-gradient(135deg, var(--accent), var(--accent-2), var(--accent-3));
-      color: #030303;
+      background: var(--accent);
+      color: #ffffff;
       border-color: transparent;
-      box-shadow: 0 0 24px rgba(255, 43, 191, 0.3);
+      box-shadow: 0 14px 28px rgba(215, 25, 32, 0.2);
     }
 
     .button:hover,
     .icon-btn:hover {
       transform: translateY(-2px);
       border-color: color-mix(in srgb, var(--accent) 70%, transparent);
-      box-shadow: 0 0 24px rgba(255, 138, 42, 0.18), 0 0 40px rgba(255, 43, 191, 0.14);
+      box-shadow: 0 14px 30px rgba(215, 25, 32, 0.14);
     }
 
     .hero {
@@ -224,9 +223,9 @@
       max-width: 560px;
       padding: 8px 10px;
       border: 1px solid rgba(255, 255, 255, 0.16);
-      background: linear-gradient(135deg, rgba(255, 138, 42, 0.88), rgba(255, 43, 191, 0.78), rgba(93, 29, 255, 0.72));
-      box-shadow: 0 0 30px rgba(255, 43, 191, 0.18);
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 12px rgba(0, 0, 0, 0.4);
+      background: var(--accent);
+      box-shadow: 0 12px 28px rgba(215, 25, 32, 0.16);
+      text-shadow: none;
     }
 
     .eyebrow::before {
@@ -244,7 +243,7 @@
       letter-spacing: 0;
       max-width: 720px;
       text-transform: uppercase;
-      text-shadow: 0 0 30px rgba(255, 43, 191, 0.18), 0 0 70px rgba(93, 29, 255, 0.16);
+      text-shadow: none;
     }
 
     .hero p {
@@ -266,11 +265,8 @@
       align-self: stretch;
       min-height: 420px;
       background:
-        radial-gradient(circle at 10% 20%, rgba(255, 138, 42, 0.72), transparent 24%),
-        radial-gradient(circle at 36% 50%, rgba(255, 43, 191, 0.7), transparent 34%),
-        radial-gradient(circle at 72% 42%, rgba(93, 29, 255, 0.84), transparent 36%),
-        linear-gradient(135deg, rgba(255, 138, 42, 0.62), rgba(255, 43, 191, 0.5) 42%, rgba(93, 29, 255, 0.52) 70%, rgba(0, 0, 0, 0.95)),
-        var(--panel-strong);
+        linear-gradient(180deg, var(--accent) 0 96px, transparent 96px),
+        var(--panel);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       padding: 18px;
@@ -290,9 +286,9 @@
       height: 180px;
       right: -80px;
       top: -80px;
-      background: color-mix(in srgb, var(--accent-2) 30%, transparent);
-      border: 1px solid color-mix(in srgb, var(--accent) 64%, transparent);
-      box-shadow: 0 0 70px rgba(255, 43, 191, 0.32);
+      background: rgba(255, 255, 255, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: none;
       transform: rotate(18deg);
     }
 
@@ -300,7 +296,7 @@
       display: flex;
       justify-content: space-between;
       gap: 16px;
-      color: var(--muted);
+      color: #ffffff;
       font-size: 13px;
       font-weight: 700;
       position: relative;
@@ -315,8 +311,8 @@
       overflow: hidden;
       border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
       border-radius: var(--radius);
-      background: #030303;
-      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.5), 0 0 46px rgba(255, 43, 191, 0.12);
+      background: #ffffff;
+      box-shadow: 0 20px 50px rgba(21, 21, 21, 0.12);
     }
 
     .portrait-card::before {
@@ -324,9 +320,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(180deg, rgba(3, 3, 3, 0.04), rgba(3, 3, 3, 0.18) 52%, rgba(3, 3, 3, 0.82)),
-        linear-gradient(135deg, rgba(255, 138, 42, 0.18), transparent 32%),
-        linear-gradient(315deg, rgba(93, 29, 255, 0.24), transparent 42%);
+        linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(21, 21, 21, 0.06) 55%, rgba(21, 21, 21, 0.18)),
+        linear-gradient(135deg, rgba(215, 25, 32, 0.08), transparent 36%);
       z-index: 1;
       pointer-events: none;
     }
@@ -350,14 +345,14 @@
       width: 92px;
       height: 92px;
       border-radius: 50%;
-      border: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
+      border: 1px solid rgba(215, 25, 32, 0.24);
       display: grid;
       place-items: center;
       font-size: 34px;
       font-weight: 820;
-      background: rgba(3, 3, 3, 0.82);
-      color: var(--ink);
-      box-shadow: inset 0 0 22px rgba(255, 43, 191, 0.14), 0 0 30px rgba(93, 29, 255, 0.16);
+      background: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 14px 28px rgba(215, 25, 32, 0.16);
       margin-bottom: 22px;
     }
 
@@ -453,7 +448,7 @@
 
     .job {
       border: 1px solid var(--line);
-      background: linear-gradient(135deg, rgba(255, 138, 42, 0.055), rgba(255, 43, 191, 0.05), rgba(93, 29, 255, 0.045)), var(--panel);
+      background: var(--panel);
       border-radius: var(--radius);
       overflow: hidden;
       transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
@@ -462,7 +457,7 @@
     .job:hover {
       transform: translateY(-3px);
       box-shadow: var(--shadow);
-      border-color: color-mix(in srgb, var(--accent-2) 38%, transparent);
+      border-color: rgba(215, 25, 32, 0.34);
     }
 
     .job-button {
@@ -551,7 +546,7 @@
 
     .card {
       border: 1px solid var(--line);
-      background: linear-gradient(135deg, rgba(255, 138, 42, 0.055), rgba(255, 43, 191, 0.05), rgba(93, 29, 255, 0.045)), var(--panel);
+      background: var(--panel);
       border-radius: var(--radius);
       padding: 20px;
       min-height: 188px;
@@ -562,7 +557,7 @@
       transform: translateY(-4px);
       box-shadow: var(--shadow);
       background: var(--panel-strong);
-      border-color: color-mix(in srgb, var(--accent-2) 30%, var(--line));
+      border-color: rgba(215, 25, 32, 0.3);
     }
 
     .card h3 {
@@ -586,8 +581,8 @@
       color: var(--muted);
       font-size: 13px;
       font-weight: 650;
-      background: rgba(3, 3, 3, 0.46);
-      box-shadow: inset 0 0 14px rgba(255, 43, 191, 0.05);
+      background: #fff4f4;
+      box-shadow: none;
     }
 
     .projects {
@@ -602,11 +597,8 @@
       flex-direction: column;
       justify-content: space-between;
       background:
-        radial-gradient(circle at 8% 20%, rgba(255, 138, 42, 0.5), transparent 30%),
-        radial-gradient(circle at 44% 48%, rgba(255, 43, 191, 0.45), transparent 36%),
-        radial-gradient(circle at 82% 46%, rgba(93, 29, 255, 0.58), transparent 34%),
-        linear-gradient(135deg, color-mix(in srgb, var(--accent) 22%, transparent), transparent 46%),
-        linear-gradient(315deg, color-mix(in srgb, var(--accent-2) 18%, transparent), transparent 42%),
+        linear-gradient(180deg, var(--accent) 0 8px, transparent 8px),
+        linear-gradient(135deg, rgba(215, 25, 32, 0.08), transparent 46%),
         var(--panel-strong);
     }
 
@@ -675,12 +667,8 @@
       align-items: end;
       gap: 28px;
       border: 1px solid var(--line);
-      background:
-        radial-gradient(circle at 12% 18%, rgba(255, 138, 42, 0.42), transparent 32%),
-        radial-gradient(circle at 56% 42%, rgba(255, 43, 191, 0.36), transparent 38%),
-        radial-gradient(circle at 88% 34%, rgba(93, 29, 255, 0.48), transparent 34%),
-        #030303;
-      color: var(--ink);
+      background: var(--accent);
+      color: #ffffff;
       border-radius: var(--radius);
       padding: clamp(24px, 5vw, 54px);
       overflow: hidden;
@@ -694,8 +682,8 @@
       top: -80px;
       width: 220px;
       height: 220px;
-      border: 1px solid color-mix(in srgb, var(--accent-2) 40%, transparent);
-      box-shadow: 0 0 70px rgba(255, 43, 191, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      box-shadow: none;
       transform: rotate(25deg);
     }
 
@@ -717,13 +705,13 @@
     }
 
     .contact-links a {
-      border: 1px solid color-mix(in srgb, var(--accent-2) 38%, transparent);
+      border: 1px solid rgba(255, 255, 255, 0.42);
       padding: 12px 14px;
       border-radius: 999px;
       font-weight: 750;
       white-space: nowrap;
-      background: rgba(3, 3, 3, 0.48);
-      box-shadow: inset 0 0 14px rgba(255, 43, 191, 0.08);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: none;
     }
 
     footer {
@@ -898,7 +886,6 @@
       </div>
       <div class="nav-actions">
         <button class="icon-btn hoverable mobile-menu" type="button" data-menu aria-label="Open navigation">Menu</button>
-        <button class="icon-btn hoverable" type="button" data-theme-toggle aria-label="Toggle color theme">Neon</button>
         <a class="button hoverable" href="mailto:shibam.kiit399@gmail.com">Email</a>
       </div>
     </nav>
@@ -922,7 +909,7 @@
           <span>Open to product and program roles</span>
         </div>
         <figure class="portrait-card">
-          <img src="shibam-portrait.png" alt="Portrait of Shibam Banerjee in a navy suit">
+          <img src="assets/shibam-portrait.png" alt="Portrait of Shibam Banerjee in a navy suit">
         </figure>
         <div class="signature">
           <div class="mark">SB</div>
@@ -1124,25 +1111,11 @@
     const root = document.documentElement;
     const progress = document.querySelector(".progress");
     const cursor = document.querySelector(".cursor");
-    const themeButton = document.querySelector("[data-theme-toggle]");
     const menuButton = document.querySelector("[data-menu]");
     const nav = document.querySelector("[data-nav]");
     const sections = [...document.querySelectorAll("main section[id]")];
     const navLinks = [...document.querySelectorAll("[data-nav] a")];
     const revealEls = [...document.querySelectorAll(".reveal")];
-
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      root.dataset.theme = savedTheme;
-      themeButton.textContent = "Neon";
-    }
-
-    themeButton.addEventListener("click", () => {
-      const next = root.dataset.theme === "dark" ? "light" : "dark";
-      root.dataset.theme = next;
-      localStorage.setItem("theme", next);
-      themeButton.textContent = "Neon";
-    });
 
     menuButton.addEventListener("click", () => {
       const visible = nav.style.display === "flex";
